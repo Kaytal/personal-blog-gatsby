@@ -29,4 +29,4 @@ collections:
 
       - { name: category, label: Category, widget: string, required: false }
 
-      - { name: html, label: Body, widget: markdown }
+      - { name: body, label: Body, widget: markdown }

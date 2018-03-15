@@ -5,7 +5,6 @@ class Hero extends React.Component {
   render() {
     return (
       <header className="hero">
-        <h1>Hello World</h1>
         <Img
           title="Bearded Robots"
           alt="Can't see the forest through the trees"

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Rosario|Yrsa');
+
+@mixin header-font {
+  font-family: 'Rosario', 'Helvetica', arial, sans-serif;
+}
+
+@mixin sub-header-font {
+  font-family: 'Fira Sans', 'Helvetica', arial, sans-serif;
+}
+
+@mixin body-font {
+  font-family: 'Yrsa', serif;
+}
+
+html, body {
+  @include body-font;
+  font-size: 18px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  @include header-font;
+  .lead {
+    display: block;
+    @include sub-header-font;
+  }
+}
+
+.main-navigation {
+  @include sub-header-font;
+}
