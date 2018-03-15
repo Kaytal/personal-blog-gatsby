@@ -1,0 +1,32 @@
+backend:
+  name: github
+  repo: kaytal/personal-blog-gatsby
+
+publish_mode: editorial_workflow
+
+media_folder: static/images/uploads
+public_folder: images/uploads
+
+collections:
+  - name: pages
+    label: Pages
+    folder: src/pages
+    create: false
+    fields:
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+  - name: posts
+    label: Posts
+    folder: src/pages/posts
+    create: true
+    fields:
+      - { name: published,label: Published, widget: boolean, default: false}
+
+      - { name: title, label: Title, widget: string }
+      - { name: excerpt, label: excerpt, widget: text }
+      - { name: path, label: Url, widget: string }
+      - { name: date, label: Date, widget: date }
+
+      - { name: category, label: Category, widget: string, required: false }
+
+      - { name: html, label: Body, widget: markdown }

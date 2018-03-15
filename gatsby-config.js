@@ -21,6 +21,7 @@ module.exports = {
     `gatsby-plugin-glamor`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-netlify-cms`
   ],
 };
