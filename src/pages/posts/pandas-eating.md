@@ -1,10 +1,15 @@
 ---
-title: "Sweet Pandas Eating Sweets"
-date: "2017-08-10"
+published: true
+title: 'First Post using Gatsby, Netlify and Netlify CMS'
+excerpt: >-
+  Well, this has been a super exciting adventure.  I set out to see if I could
+  create and deploy a functioning blog site in 15 mins.  I was shocked
+path: first-post
+date: '2018-03-14'
+category: 'Netlify, Gatsby'
 ---
+So I've had a great time working with Gatsby, GraphQL, React, Netlify, and Netlify CMS.  The stack is a particularly interesting one because React is just used to build templates for the static HTML files it outputs upon building.  GraphQL is awesome as a data layer.  Netlify was an incredibly simple hosting environment especially seeing as it has continuous deployment from my master branch on GitHub and already knows to run Gatsby Build upon deployment.  
 
-Pandas are really sweet.
+I have every intention of writing up a full article on more of a technical write up for how I did it.  Maybe something along the lines of a step by step tutorial.  I intend for this blog to not just encompass technical writings but I am also an avid gardener.  I love woodworking.  I'm a huge fan of the Tiny House movement.  All of these things should see musings on this medium soon.
 
-Here's a video of a panda eating sweets.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4n0xNbfJLR8" frameborder="0" allowfullscreen></iframe>
+I hope you will stay tuned and enjoy all the things!  Happy Trails for now.
