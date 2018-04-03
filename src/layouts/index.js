@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
+import "../styles/main.scss";
 
 class TemplateWrapper extends React.Component {
   render() {

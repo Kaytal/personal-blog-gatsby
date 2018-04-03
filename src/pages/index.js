@@ -1,8 +1,6 @@
 import React from "react";
-import g from "glamorous";
 import Link from "gatsby-link";
 import moment from "moment";
-import "../styles/main.scss";
 
 export default ({ data }) => {
   return (
