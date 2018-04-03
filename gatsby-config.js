@@ -20,7 +20,12 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-glamor`,
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-postcss-sass`,
+      options: {
+        precision: 8, // SASS default: 5
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify-cms`
