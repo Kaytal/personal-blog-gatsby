@@ -1,0 +1,15 @@
+.main-navigation {
+  padding: 1rem;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $brand-blue;
+  a {
+    color: $black;
+  }
+}
+
+.site-branding {
+  font-size: 1.5rem;
+}

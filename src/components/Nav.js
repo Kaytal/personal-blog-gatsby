@@ -7,12 +7,16 @@ class Nav extends React.Component {
 
     return (
       <div className="main-navigation">
-        <Link to={`/`}>
-          { title }
-        </Link>
-        <Link to={`/about/`}>
-          About
-        </Link>
+        <div className="site-branding">
+          <Link to={`/`}>
+            { title }
+          </Link>
+        </div>
+        <div className="navigation">
+          <Link to={`/about/`}>
+            About
+          </Link>
+        </div>
       </div>
     )
   }

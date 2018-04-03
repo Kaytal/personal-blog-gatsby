@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Bearded Robots`,
+    title: `Josh Bryant`,
+    tagline: `Bearded Robot Supreme`
   },
   plugins: [
     {

@@ -1,6 +1,5 @@
 import React from "react";
 import Nav from "../components/Nav";
-import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 
 class TemplateWrapper extends React.Component {
@@ -10,7 +9,6 @@ class TemplateWrapper extends React.Component {
     return (
       <div className="site-wrapper">
         <Nav title={ data.site.siteMetadata.title } />
-        <Hero image={ data.headerImage } />
         {children()}
         <Footer />
       </div>
@@ -25,11 +23,6 @@ export const query = graphql`
     site {
       siteMetadata {
         title
-      }
-    }
-    headerImage: imageSharp(id: { regex: "/" }) {
-      sizes(maxWidth: 1240, maxHeight: 300 ) {
-        ...GatsbyImageSharpSizes
       }
     }
   }

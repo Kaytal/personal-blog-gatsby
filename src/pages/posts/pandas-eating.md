@@ -1,9 +1,6 @@
 ---
 published: true
 title: 'First Post using Gatsby, Netlify and Netlify CMS'
-excerpt: >-
-  Well, this has been a super exciting adventure.  I set out to see if I could
-  create and deploy a functioning blog site in 15 mins.  I was shocked
 path: first-post
 date: '2018-03-14'
 category: 'Netlify, Gatsby'

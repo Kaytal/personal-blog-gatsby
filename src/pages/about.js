@@ -1,11 +1,15 @@
 import React from "react";
+import Img from "gatsby-image";
 
 export default ({ data }) => (
-  <div>
-    <h1>About { data.site.siteMetadata.title }</h1>
+  <div className="content-column about-content">
+    <h1>About Me!</h1>
+    <Img className="circle-image" title="Josh and Lainey Bryant" alt="Me" sizes={data.avatarImage.sizes} />
     <p>
-      We're the only site running on your computer dedicated to showing the best
-      photos and videos of pandas eating lots of food.
+      Above is me pretty much summed up in a single picture.  I'm married to my best friend and love of my life.  I &hearts; the mountains (specifically Colorado).  I have a pretty cool beard.  I'm a Web Geek.
+    </p>
+    <p>
+      Not pictured is my love of Gardening, Woodworking, Kayaking, Hiking, Backpacking, Casual Bike Rides, Trees, and all of my amazing friends.
     </p>
   </div>
 );
@@ -15,6 +19,11 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    avatarImage: imageSharp(id: { regex: "/avatar/" }) {
+      sizes(maxWidth: 250 ) {
+      	...GatsbyImageSharpSizes
       }
     }
   }

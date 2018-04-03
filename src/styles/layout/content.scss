@@ -1,0 +1,23 @@
+.content-column {
+  max-width: 650px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.about-content {
+  h1, p {
+    text-align: center;
+  }
+  p {
+    line-height: 1.5;
+  }
+  .gatsby-image-outer-wrapper {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+
+.circle-image {
+  border-radius: 50%;
+}

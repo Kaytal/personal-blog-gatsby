@@ -1,0 +1,10 @@
+.site-footer {
+  text-align: center;
+  @include header-font;
+  padding: 1rem;
+  background-color: $brand-blue;
+  p {
+    margin: 0;
+    line-height: 1.7;
+  }
+}

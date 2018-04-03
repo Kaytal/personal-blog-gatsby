@@ -25,6 +25,19 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
+a {
+  text-decoration: none;
+  color: $brand-blue;
+  &:visited, &:hover, &:focus {
+    color: $brand-blue;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .main-navigation {
   @include sub-header-font;
 }
+
+

@@ -1,13 +1,16 @@
 import React from "react";
 
-class Hero extends React.Component {
+class Footer extends React.Component {
   render() {
+    const today = new Date();
+
     return (
       <footer className="site-footer">
-        Test stuff
+        <p>Copyright &copy; {today.getFullYear()} Joshua Bryant</p>
+        <p>Made with &hearts; on Gatsby</p>
       </footer>
     );
   }
 }
 
-export default Hero;
+export default Footer;

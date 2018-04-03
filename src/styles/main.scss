@@ -1,17 +1,9 @@
-@import 'base/module';
+@import 'base/module',
+        'layout/module';
 
 
 html, body {
   color: $black;
-}
-
-a {
-  text-decoration: none;
-  color: $purple-4;
-  &:visited, &:hover, &:focus {
-    color: $purple-4;
-  }
-  &:hover {
-    text-decoration: underline;
-  }
+  height: 100%;
+  width: 100%;
 }
