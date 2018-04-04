@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Josh Bryant`,
-    tagline: `Bearded Robot Supreme`
+    tagline: `Bearded Robot Supreme`,
+    description: `A small blog about what I'm currently up to.  Web Dev, Woodworking, Gardening, no hobby shall be spared!`,
+    canonicalBase: `https://josh.beardedrobots.com`
   },
   plugins: [
     {
@@ -26,6 +28,7 @@ module.exports = {
         precision: 8, // SASS default: 5
       },
     },
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify-cms`
