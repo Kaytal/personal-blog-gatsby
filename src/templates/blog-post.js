@@ -1,11 +1,17 @@
 import React from "react";
+import moment from "moment";
 
 export default ({ data }) => {
   const post = data.markdownRemark;
   return (
-    <div className="content-column single-post">
-      <h1>{post.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+    <div className="content-column single-post article">
+      <header className="article__header">
+        <h1 className="article__title">
+          {post.frontmatter.title}
+        </h1>
+        <p className="article__published">Published: {moment(post.frontmatter.date).format('MMMM Do, YYYY')}</p>
+      </header>
+      <main className="article__content" dangerouslySetInnerHTML={{ __html: post.html }} />
     </div>
   );
 };
