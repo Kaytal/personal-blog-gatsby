@@ -4,7 +4,7 @@ import {Helmet} from "react-helmet";
 
 export default ({ data }) => {
   const post = data.markdownRemark;
-  const canonical = `http://${ data.site.host}/posts/${post.frontmatter.path}`;
+  const canonical = `${ data.site.siteMetadata.canonicalBase}/posts/${post.frontmatter.path}`;
   return (
     <div className="content-column single-post article">
       <Helmet>
@@ -39,9 +39,9 @@ export const query = graphql`
       }
     }
     site {
-      host
       siteMetadata {
         title
+        canonicalBase
       }
     }
   }
