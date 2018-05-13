@@ -14,8 +14,7 @@ export default ({ data }) => {
         <meta property="og:title" content={post.frontmatter.title} />
         <meta property="og:url" content={canonical} />
         <meta property="og:type" content="article" />
-        <meta property="og:description" content={post.excerpt} />
-        
+        <meta property="og:description" content={post.excerpt} />        
       </Helmet>
       <header className="article__header">
         <h1 className="article__title">
@@ -35,6 +34,7 @@ export const query = graphql`
       excerpt
       frontmatter {
         title
+        date
         path
       }
     }
