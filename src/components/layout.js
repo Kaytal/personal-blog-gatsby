@@ -2,14 +2,26 @@ import React from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import {Helmet} from "react-helmet"
+import { StaticQuery, graphql } from 'gatsby';
 import "../styles/main.scss";
 
-class TemplateWrapper extends React.Component {
-  render() {
-    const {data, children} = this.props;
-    console.log('DATA: ', data);
 
-    return (
+export default ({children}) => (
+  
+  <StaticQuery
+    query={graphql`
+      query LayoutQuery {
+        site {
+          siteMetadata {
+            title
+            tagline
+            description
+            canonicalBase
+          }
+        }
+      }
+    `}
+    render={data => (
       <div className="site-wrapper">
         <Helmet>
           <meta charSet="utf-8" />
@@ -21,24 +33,10 @@ class TemplateWrapper extends React.Component {
           <meta property="og:description" content={ data.site.siteMetadata.description } />
         </Helmet>
         <Nav title={ data.site.siteMetadata.title } />
-        {children()}
+        {children}
         <Footer />
       </div>
-    )
-  }
-}
+    )}
+  />
+)
 
-export default TemplateWrapper;
-
-export const query = graphql`
-  query LayoutQuery {
-    site {
-      siteMetadata {
-        title
-        tagline
-        description
-        canonicalBase
-      }
-    }
-  }
-`

@@ -21,16 +21,15 @@ module.exports = {
       }
     },
     `gatsby-transformer-remark`,
-    `gatsby-plugin-glamor`,
     {
-      resolve: `gatsby-plugin-postcss-sass`,
+      resolve: `gatsby-plugin-sass`,
       options: {
+        includePaths: [`${__dirname}/src/styles/main.scss`],
         precision: 8, // SASS default: 5
       },
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-netlify-cms`
   ],
 };
