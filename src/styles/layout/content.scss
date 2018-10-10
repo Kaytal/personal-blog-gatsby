@@ -20,4 +20,10 @@
 
 .circle-image {
   border-radius: 50%;
+  &--index {
+    display: block;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
 }

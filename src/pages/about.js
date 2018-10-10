@@ -21,7 +21,7 @@ export const query = graphql`
         title
       }
     }
-    avatarImage: imageSharp(id: { regex: "/avatar/" }) {
+    avatarImage: imageSharp(id: { regex: "/avatar3/" }) {
       sizes(maxWidth: 250 ) {
       	...GatsbyImageSharpSizes
       }

@@ -1,11 +1,13 @@
 import React from "react";
 import Link from "gatsby-link";
+import Img from "gatsby-image";
 import moment from "moment";
 
 export default ({ data }) => {
   return (
     <div className="post-list content-column">
       <header className="post-list__header">
+        <Img className="circle-image circle-image--index" title="Josh and Lainey Bryant" alt="Me" sizes={data.avatarImage.sizes} />
         <h1 className="post-list__title">Post Archive:</h1>
         <p className="post-list__count">
           {data.allMarkdownRemark.totalCount} Post{data.allMarkdownRemark.totalCount > 1 && "s"}
@@ -44,6 +46,11 @@ export const query = graphql`
           }
           excerpt
         }
+      }
+    }
+    avatarImage: imageSharp(id: { regex: "/cartoon/" }) {
+      sizes(maxWidth: 250 ) {
+      	...GatsbyImageSharpSizes
       }
     }
   }
